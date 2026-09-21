@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Kajal 💗</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    background:#fff7fb;
+    color:#3b2433;
+    overflow-x:hidden;
+}
+
+/* ---------- INTRO ---------- */
+
+#intro{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    background:linear-gradient(135deg,#ffe1ef,#f3e3ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    transition:1s;
+}
+
+.intro-box{
+    width:90%;
+    max-width:600px;
+}
+
+.intro-box .emoji{
+    font-size:55px;
+    margin-bottom:20px;
+    animation:bounce 1.5s infinite;
+}
+
+.intro-box h1{
+    font-size:clamp(42px,12vw,75px);
+    color:#e75480;
+    margin-bottom:12px;
+}
+
+.intro-box p{
+    color:#705767;
+    line-height:1.8;
+    margin-bottom:28px;
+}
+
+.open-btn{
+    border:none;
+    padding:15px 32px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#ff6f9f,#a970ff);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(220,80,140,.3);
+    transition:.3s;
+}
+
+.open-btn:hover{
+    transform:scale(1.07);
+}
+
+
+/* ---------- MAIN ---------- */
+
+main{
+    display:none;
+}
+
+section{
+    min-height:100vh;
+    padding:70px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero{
+    background:
+        radial-gradient(circle at top,#ffe0ed,transparent 55%),
+        #fff7fb;
+}
+
+.hero .emoji-title{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:clamp(45px,12vw,85px);
+    color:#df4f80;
+}
+
+.hero h2{
+    margin-top:10px;
+    font-size:clamp(21px,5vw,30px);
+    font-weight:500;
+    color:#633c52;
+}
+
+.hero p{
+    max-width:650px;
+    margin-top:25px;
+    line-height:1.9;
+    color:#765e6d;
+}
+
+
+/* ---------- GIF ---------- */
+
+.gif-section{
+    background:#fff;
+}
+
+.gif-box{
+    width:min(500px,90%);
+    padding:25px;
+    border-radius:30px;
+    background:#fff5fa;
+    box-shadow:0 15px 50px rgba(190,70,120,.12);
+}
+
+.gif-box img{
+    width:100%;
+    max-height:280px;
+    object-fit:contain;
+    border-radius:20px;
+}
+
+.gif-box h2{
+    margin-top:20px;
+    color:#dc507e;
+}
+
+.gif-box p{
+    margin-top:10px;
+    color:#725d69;
+    line-height:1.7;
+}
+
+
+/* ---------- STUDY ---------- */
+
+.study{
+    background:
+        linear-gradient(135deg,#f4e8ff,#ffeaf3);
+}
+
+.study h1{
+    font-size:clamp(35px,9vw,60px);
+    color:#7745a5;
+}
+
+.study .subtitle{
+    margin-top:12px;
+    color:#705f77;
+}
+
+.study-card{
+    width:min(650px,95%);
+    margin-top:35px;
+    padding:35px 25px;
+    border-radius:25px;
+    background:rgba(255,255,255,.75);
+    box-shadow:0 15px 50px rgba(100,60,120,.1);
+}
+
+.study-card p{
+    line-height:2;
+    margin-bottom:15px;
+}
+
+.study-card .motivation{
+    color:#d94f7f;
+    font-weight:bold;
+    font-size:20px;
+}
+
+
+/* ---------- LETTER ---------- */
+
+.letter-section{
+    background:#fff8fb;
+}
+
+.letter{
+    width:min(720px,95%);
+    padding:35px 28px;
+    border-radius:28px;
+    background:white;
+    box-shadow:0 15px 60px rgba(160,70,110,.1);
+    text-align:left;
+}
+
+.letter h2{
+    text-align:center;
+    color:#dd527e;
+    margin-bottom:28px;
+}
+
+.letter p{
+    line-height:2;
+    color:#5e4b57;
+    margin-bottom:18px;
+}
+
+.signature{
+    text-align:right;
+    margin-top:25px;
+    color:#dd527e;
+    font-size:20px;
+}
+
+
+/* ---------- GOAL ---------- */
+
+.goal{
+    background:
+        radial-gradient(circle,#ffe0ed,#f7eaff 60%);
+}
+
+.goal .big{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.goal h1{
+    font-size:clamp(35px,9vw,65px);
+    color:#713f91;
+}
+
+.goal p{
+    max-width:650px;
+    margin-top:20px;
+    line-height:2;
+    color:#65536a;
+}
+
+
+/* ---------- FINAL ---------- */
+
+.final{
+    background:linear-gradient(135deg,#ffdae9,#eadbff);
+}
+
+.final h1{
+    font-size:clamp(40px,10vw,75px);
+    color:#d84979;
+}
+
+.final p{
+    max-width:600px;
+    margin-top:20px;
+    line-height:2;
+    color:#5f4b58;
+}
+
+.love{
+    margin-top:30px;
+    padding:17px 35px;
+    border:none;
+    border-radius:50px;
+    background:#e95b89;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.love:hover{
+    transform:scale(1.08);
+}
+
+
+/* ---------- HEARTS ---------- */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    z-index:100;
+    pointer-events:none;
+    animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:600px){
+
+    section{
+        padding:60px 16px;
+    }
+
+    .letter{
+        padding:28px 20px;
+    }
+
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- INTRO -->
+
+<div id="intro">
+
+    <div class="intro-box">
+
+        <div class="emoji">
+            💌✨
+        </div>
+
+        <h1>Hey Kajal! 💗</h1>
+
+        <p>
+            This isn't a big surprise... 😌<br>
+            It's just a tiny little something<br>
+            to hopefully put a smile on your face. 😊
+        </p>
+
+        <button class="open-btn" onclick="openPage()">
+            Open It 🌸
+        </button>
+
+    </div>
+
+</div>
+
+
+<main id="main">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="emoji-title">
+        🌸🫶🏻🌸
+    </div>
+
+    <h1>Hello Kajal ❤️</h1>
+
+    <h2>My Wonderful Sister 🥰</h2>
+
+    <p>
+        Before your exams get completely serious 📚😵‍💫,
+        here's a small reminder that someone is
+        always wishing the best for you. 💗
+    </p>
+
+</section>
+
+
+<!-- GIF -->
+
+<section class="gif-section">
+
+    <div class="gif-box">
+
+        <!-- Replace the GIF URL below if you want another GIF -->
+
+        <img
+        src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+        alt="Cute emotional hug">
+
+        <h2>A little hug for you 🤗❤️</h2>
+
+        <p>
+            Consider this a virtual hug before
+            you get back to studying. 🫂✨
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- STUDY MOTIVATION -->
+
+<section class="study">
+
+    <h1>Exams Are Coming! 📚📝</h1>
+
+    <p class="subtitle">
+        So here's your little reminder... 🌷
+    </p>
+
+    <div class="study-card">
+
+        <p>
+            Don't stress too much. 🫶🏻
+        </p>
+
+        <p>
+            Study with patience, take proper breaks,
+            believe in yourself and give your best. 💪🏻✨
+        </p>
+
+        <p>
+            You don't need to be perfect.
+            Just keep moving forward one chapter,
+            one topic and one day at a time. 📖🌱
+        </p>
+
+        <p class="motivation">
+            YOU'VE GOT THIS! 🔥💗
+        </p>
+
+        <p>
+            Best of luck for all your exams! 🍀📚
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section class="letter-section">
+
+    <div class="letter">
+
+        <h2>A Few Words For You 💌</h2>
+
+        <p>
+            Dear Kajal ❤️,
+        </p>
+
+        <p>
+            I just wanted to remind you that you are
+            genuinely very special to me. 🫶🏻
+        </p>
+
+        <p>
+            As your exams are getting closer,
+            I know there will be stress, long study hours
+            and probably a few moments where you'll feel
+            like throwing your books away. 😂📚
+        </p>
+
+        <p>
+            But please believe in yourself.
+            You have your own journey, your own dreams
+            and your own goals. 🌸
+        </p>
+
+        <p>
+            Give your studies your best,
+            stay focused and don't let one difficult
+            day make you doubt yourself.
+        </p>
+
+        <p>
+            I truly hope you achieve the goal you've been
+            working towards. May all your hard work,
+            patience and efforts bring you the success
+            you deserve. ✨🙏🏻
+        </p>
+
+        <p>
+            And whenever things feel difficult,
+            remember that there are people who believe
+            in you and want to see you happy and successful. ❤️
+        </p>
+
+        <p>
+            Lots and lots of love to you, sister. 🫂💗
+        </p>
+
+        <div class="signature">
+            Always cheering for you ❤️<br>
+            Your Brother 🫶🏻
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GOAL -->
+
+<section class="goal">
+
+    <div class="big">
+        🎯✨
+    </div>
+
+    <h1>Your Goal Is Waiting</h1>
+
+    <p>
+        Keep studying. 📚<br>
+        Keep believing. 🌱<br>
+        Keep going. 💪🏻<br><br>
+
+        One day you'll look back and say,
+        <b>"It was all worth it." ❤️</b>
+    </p>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <h1>And Finally... 🥹❤️</h1>
+
+    <p>
+        This wasn't meant to be a huge surprise.
+        It was just a small corner of the internet
+        made especially for you...
+        because sometimes a simple message can make
+        someone smile. 😊
+    </p>
+
+    <p>
+        So smile! 😄🌸<br>
+        Study well! 📚<br>
+        Believe in yourself! 💪🏻<br>
+        And go achieve that goal! 🎯✨
+    </p>
+
+    <button class="love" onclick="sendLove()">
+        Sending You Lots of Love ❤️🫂
+    </button>
+
+</section>
+
+
+</main>
+
+
+<script>
+
+/* OPEN PAGE */
+
+function openPage(){
+
+    const intro=document.getElementById("intro");
+
+    intro.style.opacity="0";
+
+    setTimeout(function(){
+
+        intro.style.display="none";
+        document.getElementById("main").style.display="block";
+
+        startHearts();
+
+    },1000);
+}
+
+
+/* FLOATING HEARTS */
+
+function createHeart(){
+
+    const heart=document.createElement("div");
+
+    heart.className="heart";
+
+    const emojis=[
+        "❤️",
+        "💗",
+        "💖",
+        "💕",
+        "🫶🏻",
+        "✨",
+        "🌸",
+        "🥰"
+    ];
+
+    heart.innerHTML=
+        emojis[Math.floor(Math.random()*emojis.length)];
+
+    heart.style.left=
+        Math.random()*100+"vw";
+
+    heart.style.fontSize=
+        (15+Math.random()*25)+"px";
+
+    heart.style.animationDuration=
+        (4+Math.random()*5)+"s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+        heart.remove();
+    },9000);
+}
+
+
+function startHearts(){
+
+    setInterval(createHeart,700);
+
+}
+
+
+/* FINAL LOVE */
+
+function sendLove(){
+
+    for(let i=0;i<50;i++){
+
+        setTimeout(function(){
+            createHeart();
+        },i*60);
+
+    }
+
+    alert(
+        "Lots of love to you, Kajal! ❤️🫂\n\n" +
+        "Best of luck for your exams! 📚✨\n" +
+        "Go achieve your goal! 🎯💪🏻\n\n" +
+        "Keep smiling always! 🌸😊"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
